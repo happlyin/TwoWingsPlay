@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">2WingsPlay</string>
+
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_shield">Shield</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_setting">Setting</string>
 </resources>
