@@ -5,4 +5,7 @@
     <string name="title_shield">Shield</string>
     <string name="title_shop">Shop</string>
     <string name="title_setting">Setting</string>
+    <string name="GameList">게임목록</string>
+    <string name="GameNotice">게임 공지사항</string>
+    <string name="GameUpdateNote">게임 패치노트</string>
 </resources>
