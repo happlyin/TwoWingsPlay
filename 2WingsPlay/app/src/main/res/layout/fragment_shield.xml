@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,13 +8,80 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ShieldFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_shield"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/ProgressBar_ShieldF_RemainingTime"
+
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/TXT_ShieldF_AuthenticationNumberTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TXT_ShieldF_RemainingTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/RemainingTime"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/TXT_ShieldF_RemainingTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar_ShieldF_RemainingTime"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar_ShieldF_RemainingTime"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/TXT_ShieldF_RemainingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="60초"
+            app:layout_constraintBottom_toBottomOf="@+id/ProgressBar_ShieldF_RemainingTime"
+            app:layout_constraintEnd_toEndOf="@+id/TXT_ShieldF_RemainingTimeTitle"
+            app:layout_constraintStart_toStartOf="@+id/TXT_ShieldF_RemainingTimeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/TXT_ShieldF_RemainingTimeTitle" />
+
+        <TextView
+            android:id="@+id/TXT_ShieldF_AuthenticationNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/AuthenticationNumber"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/TXT_ShieldF_AuthenticationNumber"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar_ShieldF_RemainingTime"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar_ShieldF_RemainingTime" />
+
+        <TextView
+            android:id="@+id/TXT_ShieldF_AuthenticationNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TXT_ShieldF_AuthenticationNumberTitle"
+            android:text="5 3 2 - 9 1 2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TXT_ShieldF_AuthenticationNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

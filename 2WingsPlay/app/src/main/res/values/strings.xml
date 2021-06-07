@@ -8,4 +8,6 @@
     <string name="GameList">게임 목록</string>
     <string name="GameNotice">게임 공지사항</string>
     <string name="GameUpdateNote">게임 패치노트</string>
+    <string name="RemainingTime">남은 시간</string>
+    <string name="AuthenticationNumber">인증 번호</string>
 </resources>
